@@ -2,6 +2,18 @@ html body {
     background-color: #FAF8EC;
 }
 
+.services {
+    margin: 4rem;
+}
+
+.services img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
 .jumbotron {
     padding: 5rem;
     margin: 2rem 0rem;
