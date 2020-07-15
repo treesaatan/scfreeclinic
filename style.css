@@ -27,3 +27,19 @@ html body {
 .navbar-custom {
     background-color: #5C1008;
 }
+
+#footer {
+/*    position: fixed; */
+    margin: 6rem 0 0 0;
+    padding: 6rem 0;
+    bottom: 0; 
+    width: 100%; 
+    /* Height of the footer*/  
+    height: 40px; 
+    background: grey; 
+}
+
+#footer #footerContent {
+    text-align: center;
+    vertical-align: middle;
+}
