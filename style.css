@@ -15,13 +15,20 @@ html body {
 }
 
 .jumbotron {
-    padding: 5rem;
-    margin: 2rem 0rem;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5391fcafe4b0df683d9c51dd/1413993752796-W8E44U9DMW6UAOL9QA1U/ke17ZwdGBToddI8pDm48kNkS88rDPmJumgZXJHERgmkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhsVJsh7MXE0QkJdz4CZRuorrtEBwhfthAX6uD8VYxJqJvwGh1qtNWvMhYKnvaKhbA/image-asset.jpeg?format=750w");
+    padding: 5.5rem;
+    margin: 0rem 0rem 2rem 0rem;
     background-size: cover;
     color: white;
     text-shadow: 1px 1px 5px black;
     text-align: center;
+}
+
+/*Jumbotron Images*/
+#aboutImage {
+    background-image: url("https://www.slattcon.com/wp-content/uploads/2015/02/rittenhousebuilding.jpg");
+}
+#homeImage {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5391fcafe4b0df683d9c51dd/1413993752796-W8E44U9DMW6UAOL9QA1U/ke17ZwdGBToddI8pDm48kNkS88rDPmJumgZXJHERgmkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhsVJsh7MXE0QkJdz4CZRuorrtEBwhfthAX6uD8VYxJqJvwGh1qtNWvMhYKnvaKhbA/image-asset.jpeg?format=750w");
 }
 
 .navbar-custom {
@@ -29,14 +36,13 @@ html body {
 }
 
 #footer {
-/*    position: fixed; */
     margin: 6rem 0 0 0;
-    padding: 6rem 0;
+    padding: 4.5rem 0;
     bottom: 0; 
     width: 100%; 
     /* Height of the footer*/  
     height: 40px; 
-    background: grey; 
+    background: #E0DEDC; 
 }
 
 #footer #footerContent {
