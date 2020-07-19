@@ -15,7 +15,7 @@ html body {
 }
 
 .jumbotron {
-    padding: 5.5rem;
+    padding: 5.8rem;
     margin: 0rem 0rem 2rem 0rem;
     background-size: cover;
     color: white;
@@ -47,5 +47,18 @@ html body {
 
 #footer #footerContent {
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    /* justify-content: center; */
 }
+
+/* #footer #footerContent a {
+    display: inline-block;
+
+} */
+
+
+
+
+
+
+
