@@ -2,6 +2,10 @@ html body {
     background-color: #FAF8EC;
 }
 
+a {
+    color: #212529;
+}
+
 .services {
     margin: 4rem;
 }
@@ -15,13 +19,14 @@ html body {
 }
 
 .jumbotron {
-    padding: 5.8rem;
+    padding: 6rem;
     margin: 0rem 0rem 2rem 0rem;
     background-size: cover;
     color: white;
     text-shadow: 1px 1px 5px black;
     text-align: center;
 }
+
 
 /*Jumbotron Images*/
 #aboutImage {
@@ -31,13 +36,23 @@ html body {
     background-image: url("https://images.squarespace-cdn.com/content/v1/5391fcafe4b0df683d9c51dd/1413993752796-W8E44U9DMW6UAOL9QA1U/ke17ZwdGBToddI8pDm48kNkS88rDPmJumgZXJHERgmkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dhsVJsh7MXE0QkJdz4CZRuorrtEBwhfthAX6uD8VYxJqJvwGh1qtNWvMhYKnvaKhbA/image-asset.jpeg?format=750w");
 }
 
+#fillerImage {
+    background-image: url("https://www.ofx.com/-/media/images_for_modules/modules/ml018%20-%20generic%20hero/blog/cs-342%20medical-tourisim-header-1600x600.ashx?hash=B1C009ADE22C991B6EB2EE16AA546F67");
+}
+
 .navbar-custom {
     background-color: #5C1008;
+    padding-top: 0;
+}
+
+.navbar-logo {
+    background-color: #5C1008;
+    padding-bottom: 0;
 }
 
 #footer {
     margin: 6rem 0 0 0;
-    padding: 4.5rem 0;
+    padding: 4.5rem 0 7.5rem 0;
     bottom: 0; 
     width: 100%; 
     /* Height of the footer*/  
