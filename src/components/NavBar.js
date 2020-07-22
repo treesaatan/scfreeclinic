@@ -1,14 +1,21 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
     .navbar {
         background-color: #5C1008;
+        padding-top: 0;
     }
 
-    .navbar-brand, .navbar-nav .nav-link {
-        color: #bbb;
+    .navbar .scfc-logo {
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+        color: white;
+    }
+
+    .navbar-nav .nav-link {
+        color: rgba(255,255,255,.6);
 
         &:hover {
             color: white;
@@ -16,18 +23,29 @@ const Styles = styled.div`
     }
 `;
 
-export const NavBar = () => (
+export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg">
-            <Navbar.Brand href="/"> SCFC </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto"> 
-                    <Nav.Item><Nav.Link href="/">Our Services</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/about">About the Clinic</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/ourteam">Our Team</Nav.Link></Nav.Item>
-                </Nav>
-            </Navbar.Collapse>
+            <Container>
+                <Navbar.Brand href="/" className="scfc-logo"><img src="https://gallery.mailchimp.com/dc310f781af3dfc101fd4c57c/images/1e63e991-c626-430b-aa5c-0113be67a089.jpg" height="35"/> SC Free Clinic</Navbar.Brand>
+            </Container>
+        </Navbar>
+        <Navbar expand="lg">
+            <Container>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto"> 
+                        <Nav.Item><Nav.Link href="/">Our Services</Nav.Link></Nav.Item>
+                        {/* <Nav.Item><Nav.Link href="/ourteam">Our Team</Nav.Link></Nav.Item> */}
+                        <NavDropdown title="About the Clinic" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/about">Mission + Goal</NavDropdown.Item>
+                            <NavDropdown.Item href="/ourteam">Our Team</NavDropdown.Item>
+                            {/* <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
         </Navbar>
     </Styles>
 )

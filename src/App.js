@@ -1,28 +1,32 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from './Home';
 import { About } from './About';
 import { OurTeam } from './OurTeam';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
-import { NavBar } from './components/NavBar';
+import { NavigationBar } from './components/NavBar';
+import { Jumbotron } from './components/Jumbotron';
 
-function App() {
-  return (
-    <React.Fragment>
-      <NavBar />
-      <Layout>
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
         <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/ourteam" component={OurTeam} />
-            <Route component={NoMatch} />
-          </Switch>
+        <NavigationBar />
+        <Jumbotron />
+        <Layout>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/ourteam" component={OurTeam} />
+              <Route component={NoMatch} />
+            </Switch>
+        </Layout>
         </Router>
-      </Layout>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
