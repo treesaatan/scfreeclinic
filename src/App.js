@@ -5,10 +5,12 @@ import { About } from './About';
 import { OurTeam } from './OurTeam';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
-import { NavigationBar } from './components/NavBar';
 import { Jumbotron } from './components/Jumbotron';
+import { NavigationBar } from './components/NavBar';
+import Footer from './components/Footer';
 
 class App extends Component {
+
   render() {
     return (
       <React.Fragment>
@@ -23,6 +25,7 @@ class App extends Component {
               <Route component={NoMatch} />
             </Switch>
         </Layout>
+        <Footer />
         </Router>
       </React.Fragment>
     );

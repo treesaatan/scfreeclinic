@@ -9,34 +9,52 @@ const Styles = styled.div`
     }
 
     .navbar .scfc-logo {
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         padding-bottom: 0;
         color: white;
     }
 
     .navbar-nav .nav-link {
         color: rgba(255,255,255,.6);
-
         &:hover {
             color: white;
         }
     }
+
+    // When a dropdown is clicked, remain white
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: white;
+    }
+
+    .dropdown-menu {
+        background-color: #5C1008;
+    }
+
+    .dropdown-item {
+        color: rgba(255,255,255,.6);
+        &:hover {
+            color: white;
+            background: transparent;
+        }
+    }
+
+    // .dropdown-toggle::after {
+    // }
 `;
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar expand="lg">
+        <Navbar expand="lg" >
             <Container>
                 <Navbar.Brand href="/" className="scfc-logo"><img src="https://gallery.mailchimp.com/dc310f781af3dfc101fd4c57c/images/1e63e991-c626-430b-aa5c-0113be67a089.jpg" height="35"/> SC Free Clinic</Navbar.Brand>
             </Container>
         </Navbar>
-        <Navbar expand="lg">
+        <Navbar expand="lg" variant="dark">
             <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto"> 
                         <Nav.Item><Nav.Link href="/">Our Services</Nav.Link></Nav.Item>
-                        {/* <Nav.Item><Nav.Link href="/ourteam">Our Team</Nav.Link></Nav.Item> */}
                         <NavDropdown title="About the Clinic" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/about">Mission + Goal</NavDropdown.Item>
                             <NavDropdown.Item href="/ourteam">Our Team</NavDropdown.Item>
