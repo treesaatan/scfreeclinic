@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Nav, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faFacebookSquare,
-    faTwitter,
-    faInstagramSquare,
-  } from '@fortawesome/free-brands-svg-icons'
+import Button from 'react-bootstrap/Button'
 
 const Styles = styled.div`
-    .navbar {
+    .nav {
         background-color: #E0DEDC;
         padding: 4rem;
         margin: 7rem 0 0 0;
     }
 
-    .navbar p {
-        margin: 0;
-        width: 100%;
-        margin: 0 auto;
+    .nav p {
+        margin: .2rem;
     }
 
     #footer-content {
@@ -30,22 +24,15 @@ const Styles = styled.div`
     }
 `;
 
-class Footer extends Component {
-
-    render() {
-      return (
+export const Footer = () => (
         <Styles>
-            <Navbar expand="lg" variant="dark">
+            <Nav className="justify-content-center" expand="lg" variant="dark">
                 <Container id="footer-content">
                     <p>Location: -- | Phone Number: -- | Email: <a href="mailto:scfreeclinic@gmail.com"> scfreeclinic@gmail.com </a></p>
-                    <FontAwesomeIcon icon={["fab", "facebook-square"]} />
-                    <FontAwesomeIcon icon={["fab", "instagram-square"]} />
-                    <FontAwesomeIcon icon={["fab", "twitter"]} />
+                    <Button variant="link" href="https://www.facebook.com/groups/215765172962897/" target="_blank"><FontAwesomeIcon icon={["fab", "facebook-f"]} /></Button>
+                    <Button variant="link" href="https://www.instagram.com/scfreeclinic/" target="_blank"><FontAwesomeIcon icon={["fab", "instagram"]} /></Button>
+                    <Button variant="link" href="https://twitter.com/scfreeclinic" target="_blank"><FontAwesomeIcon icon={["fab", "twitter"]} /></Button>
                 </Container>
-            </Navbar>
+            </Nav>
         </Styles>
-      );
-    }
-  }
-  
-export default Footer;
+)

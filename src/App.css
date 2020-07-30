@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/* Jumbotron Text */
+h1 {
+  letter-spacing: .18rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  letter-spacing: .12rem;
+  margin: 2rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Mission Statement */
+#mission {
+  padding: 2rem;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: .07rem;
+  border-color: #E0DEDC;
+  margin: 5rem 0;
+}
+#mission h6 {
+  margin: 1.5rem 0 0 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h5 {
+  line-height: 2rem;
+  margin: 0 0 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h6 {
+  line-height: 1.5rem;
+  padding: 0 2rem;
 }

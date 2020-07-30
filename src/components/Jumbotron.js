@@ -23,8 +23,9 @@ const Styles = styled.div`
     }
 `;
 
-export const Jumbotron = () => (
+export const Jumbotron = (props) => (
     <Styles>
+        <div style={{background: props}} />
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
             <Container> 
@@ -32,4 +33,5 @@ export const Jumbotron = () => (
             </Container>
         </Jumbo>
     </Styles>
+
 )

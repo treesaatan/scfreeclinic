@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Home = () => (
+export const OurServices = () => (
     <div>
-        <h1>Our Services</h1>
+        <h2>Our Services</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corporis.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate totam perspiciatis mollitia et sapiente obcaecati.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
