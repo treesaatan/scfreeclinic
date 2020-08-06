@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Nav, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

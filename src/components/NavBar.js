@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import logo from '../assets/scfc_logo.png';
 
 const Styles = styled.div`
     .navbar {
@@ -12,6 +13,7 @@ const Styles = styled.div`
         padding-top: 1rem;
         padding-bottom: 0;
         color: white;
+        font-size: 1.5rem !important;
     }
 
     .navbar-nav .nav-link {
@@ -46,7 +48,7 @@ export const NavigationBar = () => (
     <Styles>
         <Navbar collapseOnSelect expand="lg" >
             <Container>
-                <Navbar.Brand href="/scfreeclinic/#/" className="scfc-logo"><img src="https://gallery.mailchimp.com/dc310f781af3dfc101fd4c57c/images/1e63e991-c626-430b-aa5c-0113be67a089.jpg" height="35"/> SC Free Clinic</Navbar.Brand>
+                <Navbar.Brand href="/scfreeclinic/#/" className="scfc-logo"><img src={logo} height="55" alt="SCFC"/> SC Free Clinic</Navbar.Brand>
             </Container>
         </Navbar>
         <Navbar collapseOnSelect expand="lg" variant="dark">
