@@ -6,7 +6,6 @@ import { About } from './About';
 import { OurTeam } from './OurTeam';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
-import { Jumbotron } from './components/Jumbotron';
 import { NavigationBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import "./App.css";
@@ -18,7 +17,6 @@ class App extends Component {
       <React.Fragment>
         <Router>
         <NavigationBar />
-        <Jumbotron />
         <Layout>
             <Switch>
               <Route exact path="/" component={About} />

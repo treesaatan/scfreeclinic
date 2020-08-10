@@ -24,8 +24,9 @@ const Styles = styled.div`
     }
 
     // When a dropdown is clicked, remain white
-    .navbar-light .navbar-nav .show>.nav-link {
+    .navbar-light .navbar-nav .show>.nav-link , .dropdown-item.active {
         color: white;
+        background: transparent;
     }
 
     .dropdown-menu {

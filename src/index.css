@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.campus_jumbo {
+  background: url(./assets/campus.jpg) center;
+}
+
+.ethan_jumbo {
+  background: url(./assets/ethan_p.png) center;
+}

@@ -1,6 +1,9 @@
 import React from 'react';
+import {Jumbotron} from './components/Jumbotron'
 
 export const OurTeam = () => (
+    <React.Fragment>
+    <Jumbotron jumboClasses="ethan_jumbo" jumboText="OUR TEAM"/>
     <div>
         <h2>PR Team</h2>
         <h5>The PR team is working towards building a relationship with the community and bringing people into the clinic. We are also working to bring resources to those who are experiencing houselessness. </h5>
@@ -14,4 +17,6 @@ export const OurTeam = () => (
         <h5>The Finance Team is working to ensure that our team is able to successfully receive donations from our community and that our organization can continue to provide resources for fighting healthcare disparities. </h5>
         <h6>The Finance Team is working to ensure that the clinic makes fiscal decisions to best support our community.</h6>
     </div>
+    </React.Fragment>
+
 )
