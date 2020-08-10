@@ -47,7 +47,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar collapseOnSelect expand="lg" >
+        <Navbar collapseOnSelect expand="lg">
             <Container>
                 <Navbar.Brand href="/scfreeclinic/#/" className="scfc-logo"><img src={logo} height="55" alt="SCFC"/> SC Free Clinic</Navbar.Brand>
             </Container>

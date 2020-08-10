@@ -1,9 +1,10 @@
 /* Jumbotron Text */
 h1 {
   letter-spacing: .18rem;
+  font-size: 3rem;
 }
 
-h2 {
+h3 {
   letter-spacing: .12rem;
   margin: 2rem 0 0.5rem 0;
 }
@@ -22,12 +23,13 @@ h2 {
   padding: 0;
 }
 
-h5 {
+h6 {
   line-height: 2rem;
   margin: 0 0 1rem 0;
 }
 
-h6 {
+p {
   line-height: 1.5rem;
   padding: 0 2rem;
 }
+

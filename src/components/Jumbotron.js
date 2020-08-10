@@ -6,13 +6,11 @@ export const Jumbotron = (props) => {
     const { jumboClasses, jumboText } = props;
     // console.log("tesssa: " + JSON.stringify(props))
     return (
-        <div>
-        <Jumbo fluid className= {"base_jumbo " + jumboClasses}>
-            <div className="jumbo_overlay"></div>
+        <Jumbo fluid className= {"full_width , base_jumbo " + jumboClasses}>
+            {/* <div className="jumbo_overlay"></div> */}
             <Container> 
                 <h1>{jumboText}</h1>
             </Container>
         </Jumbo>
-        </div>
     )
 }
