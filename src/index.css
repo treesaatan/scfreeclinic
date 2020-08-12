@@ -13,6 +13,7 @@ code {
     monospace;
 }
 
+/* jumbotron images */
 .about_jumbo {
   background: url(./assets/campus.jpg) center;
 }
@@ -24,3 +25,4 @@ code {
 .ourservices_jumbo {
   background: url(./assets/ourservices.jpg) center;
 }
+
