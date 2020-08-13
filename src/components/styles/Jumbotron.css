@@ -7,8 +7,6 @@
     text-shadow: 1px 1px 5px black;
     text-align: center;
     z-index: -2;
-    /* margin-left: calc(-100vw / 2 + 500px / 2);
-    margin-right: calc(-100vw / 2 + 500px / 2); */
 }
 
 /* https://gomakethings.com/how-to-break-an-image-out-of-its-parent-container-with-css/ */

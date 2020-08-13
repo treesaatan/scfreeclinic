@@ -19,16 +19,28 @@ p {
   padding: 0 2rem;
 }
 
-/* Mission Statement */
+/* About the Clinic Page */
 #mission {
   padding: 2rem;
   border-left-style: solid;
   border-right-style: solid;
   border-width: .07rem;
   border-color: #E0DEDC;
-  margin: 5rem 0;
+  margin: 3.5rem 0;
 }
 #mission h6 {
   margin: 1.5rem 0 0 0;
   padding: 0;
+}
+.card-header {
+  text-align: center;
+  background-color: #eee3a7;
+}
+.card {
+  background-color: transparent;
+}
+
+/* Our Team Page */
+.boardMember {
+  margin: 1.5rem 0;
 }
