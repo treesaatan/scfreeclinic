@@ -1,11 +1,11 @@
 import React from 'react';
 import {Jumbotron} from './components/Jumbotron';
 
-export const OurServices = () => (
+export const HygieneProducts = () => (
     <React.Fragment>
-        <Jumbotron jumboClasses="ourservices_jumbo" jumboText="OUR SERVICES"/>
+        <Jumbotron jumboClasses="hygieneproducts_jumbo" jumboText="HYGIENE PRODUCTS"/>
             <div>
-                <h3>Our Services</h3>
+                <h3>Hygiene Products</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corporis.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate totam perspiciatis mollitia et sapiente obcaecati.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

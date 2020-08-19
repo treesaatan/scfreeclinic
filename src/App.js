@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./components/FontAwesomeIcon";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { OurServices } from './OurServices';
+import { HygieneProducts } from './HygieneProducts';
 import { About } from './About';
 import { OurTeam } from './OurTeam';
 import { NoMatch } from './NoMatch';
@@ -21,8 +21,8 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={About} />
               <Route path="/about" component={About} />
-              <Route path="/ourteam" component={OurTeam} />
-              <Route path="/ourservices" component={OurServices} />
+              <Route path="/our_team" component={OurTeam} />
+              <Route path="/hygiene_products" component={HygieneProducts} />
               <Route component={NoMatch} />
             </Switch>
         </Layout>
