@@ -57,14 +57,14 @@ export const NavigationBar = () => (
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto"> 
-                        <Nav.Item><Nav.Link href="/scfreeclinic/#/ourservices">Our Services</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link><Link to='/ourservices'><li>Our Services</li></Link></Nav.Link></Nav.Item>
                         <NavDropdown title="About the Clinic" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/scfreeclinic/#/about">Mission + Goal</NavDropdown.Item>
-                            <NavDropdown.Item href="/scfreeclinic/#/ourteam">Our Team</NavDropdown.Item>
+                            <NavDropdown.Item><Link to='/about'><li>Mission + Goal</li></Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to='/ourteam'><li>Our Team</li></Link></NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Become Involved" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#">GoFundMe</NavDropdown.Item>
-                            <NavDropdown.Item href="#">Other</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.gofundme.com/f/santa-cruz-free-clinic-gofundme-fund?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all" target="_blank">GoFundMe</NavDropdown.Item>
+                            <NavDropdown.Item href="https://forms.gle/vp6ATFmfQVDgJRuA6" target="_blank">Volunteer Interest Form</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
