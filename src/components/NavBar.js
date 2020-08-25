@@ -43,25 +43,28 @@ const Styles = styled.div`
         }
     }
 
-    // .dropdown-toggle::after {
-    // }
+    #link {
+        padding: 8px;
+    }
+
 `;
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="lg" >
             <Container>
-                <Navbar.Brand href="/scfreeclinic/#/" className="scfc-logo"><img src={logo} height="55" alt="SCFC"/></Navbar.Brand>
+                {/* only show brand when on desktop+ */}
+                <Navbar.Brand href="/" className="scfc-logo"><img src={logo} height="55" alt="SCFC"/></Navbar.Brand>
             </Container>
         </Navbar>
         <Navbar collapseOnSelect expand="lg" variant="dark">
             <Container>
+                {/* only show brand when on mobile */}
+                <Navbar.Brand href="/"></Navbar.Brand> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto"> 
-                        <NavDropdown title="Our Services" id="basic-nav-dropdown">
-                            <NavDropdown.Item><Link to='/hygiene_products'>Hygiene Products</Link></NavDropdown.Item>
-                        </NavDropdown>
+                    <Link id="link" to="/our_services">Our Services</Link>
                         <NavDropdown title="About the Clinic" id="basic-nav-dropdown">
                             <NavDropdown.Item><Link to='/about'>Mission + Goal</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to='/our_team'>Our Team</Link></NavDropdown.Item>
@@ -76,3 +79,4 @@ export const NavigationBar = () => (
         </Navbar>
     </Styles>
 )
+
