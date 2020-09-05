@@ -1,13 +1,16 @@
 body {
   margin: 0;
-  font-family: 'Merriweather', 'Noto Serif', serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Merriweather", "Noto Serif", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FAF8EC;
+  background: #faf8ec;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -24,3 +27,19 @@ code {
   background: url(./assets/hygieneproducts.jpg) center;
 }
 
+.internapp_jumbo {
+  background: url(./assets/internapp.png) center;
+}
+
+.corevalues_jumbo {
+  background: url(./assets/corevalues.png) center;
+}
+
+p,
+li {
+  font-size: 15px;
+}
+
+.bodywidth {
+  padding: 0 4rem;
+}
