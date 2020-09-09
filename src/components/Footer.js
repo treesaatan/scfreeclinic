@@ -29,7 +29,7 @@ export const Footer = () => (
             <Nav className="justify-content-center" expand="lg" variant="dark">
                 <Container id="footer-content">
                     <p>Location: 741 Chestnut Street, Santa Cruz CA | Email: <a href="mailto:scfreeclinic@gmail.com"> scfreeclinic@gmail.com </a></p>
-                    <Button variant="link" href="https://www.facebook.com/groups/215765172962897/" target="_blank"><FontAwesomeIcon icon={["fab", "facebook-f"]} /></Button>
+                    <Button variant="link" href="https://www.facebook.com/SCfreeclinic" target="_blank"><FontAwesomeIcon icon={["fab", "facebook-f"]} /></Button>
                     <Button variant="link" href="https://www.instagram.com/scfreeclinic/" target="_blank"><FontAwesomeIcon icon={["fab", "instagram"]} /></Button>
                     <Button variant="link" href="https://twitter.com/scfreeclinic" target="_blank"><FontAwesomeIcon icon={["fab", "twitter"]} /></Button>
                 </Container>
